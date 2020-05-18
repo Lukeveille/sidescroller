@@ -1,3 +1,4 @@
+// @ts-nocheck 
 class Display {
   constructor(canvas) {
     this.buffer  = document.createElement("canvas").getContext("2d"),

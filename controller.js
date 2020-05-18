@@ -1,3 +1,4 @@
+// @ts-nocheck 
 class Controller {
   constructor() {
     this.down  = new Controller.ButtonInput();
@@ -6,11 +7,11 @@ class Controller {
     this.up    = new Controller.ButtonInput();
   }
   
-  keyDownUp(event) {
+  keyDownUp(e) {
 
-    var down = (event.type == "keydown") ? true : false;
+    var down = (e.type == "keydown") ? true : false;
 
-    switch(event.keyCode) {
+    switch(e.keyCode) {
 
       case 37: this.left.getInput(down); break;
       case 38: this.up.getInput(down); break;
@@ -19,19 +20,13 @@ class Controller {
 
     }
 
-    alert("You pressed a key (" + event.keyCode + ")!");
+    alert("You pressed a key (" + e.keyCode + ")!");
 
   }
   
-  handleKeyDownUp = (event) => {
-    this.keyDownUp(event);
+  handleKeyDownUp = (e) => {
+    this.keyDownUp(e);
   }
-}
-
-Controller.prototype = {
-
-  constructor : Controller
-
 }
 
 Controller.ButtonInput = function() {

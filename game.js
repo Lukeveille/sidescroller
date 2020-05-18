@@ -1,3 +1,4 @@
+// @ts-nocheck 
 class Game {
   constructor() {
     this.color = 'rgb(0,0,0)';

@@ -1,3 +1,4 @@
+// @ts-nocheck
 window.addEventListener('load', e => {
   
   'use strict';

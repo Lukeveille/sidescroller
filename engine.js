@@ -1,3 +1,4 @@
+// @ts-nocheck 
 class Engine {
   constructor(time_step, update, render) {
 
